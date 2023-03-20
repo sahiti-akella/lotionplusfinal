@@ -40,12 +40,10 @@ function App() {
         <div>
             {profile ? (
                 <div>
-                    <div loginInfo>
-                        <img style={{borderRadius: "50%"}}src={profile.picture} alt="user image" />
-                        <h3>User Logged in</h3>
-                        <p>Name: {profile.name}</p>
-                        <p>Email Address: {profile.email}</p>
-                        </div>
+                    <div className='profileInfo'>
+                        <img className='profileImage' style={{borderRadius: "50%", height: "50px", marginTop: "-15px", marginRight: "10px"}}src={profile.picture} alt="user image" />
+                        <p>{profile.email}</p>
+                    </div>
                     <br />
                     <br />
                     <button className='signOut' onClick={logOut}>Sign out</button>

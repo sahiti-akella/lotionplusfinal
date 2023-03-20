@@ -241,13 +241,12 @@ input.note-title {
 
 .signOut {
   font-size: 20px;
-  position: relative;
-  left: 20px;
-  bottom: 905px;
-  height: 75px;
-  padding: 20 20px;
   margin-right: 20px;
   float: right;
+  position: relative;
+  bottom: 100px;
+  height: 75px;
+  left: 20px;
 }
 
 .signIn {
@@ -260,6 +259,10 @@ input.note-title {
   float: right;
 }
 
-.loginInfo {
-  margin-bottom: 8px
+.profileInfo {
+  display: flex;
+  margin-left: 78%;
+  margin-top: -683px;
+  margin-right: 20px;
+
 }
