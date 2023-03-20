@@ -13,6 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <GoogleOAuthProvider clientId="243770027260-lie52p3h90tqff80regn7c88av460kbv.apps.googleusercontent.com">
+    <React.StrictMode>
+            
       <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
@@ -28,6 +30,9 @@ root.render(
           </Route>
         </Routes>
       </BrowserRouter>
+      <App />
+        </React.StrictMode>
+      
     </GoogleOAuthProvider>
   </>
 );

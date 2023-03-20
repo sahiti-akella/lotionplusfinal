@@ -231,3 +231,10 @@ input.note-title {
   text-align: center;
   font-size: 1.2em;
 }
+
+.googleLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
