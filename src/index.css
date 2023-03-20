@@ -238,3 +238,28 @@ input.note-title {
   align-items: center;
  
 }
+
+.signOut {
+  font-size: 20px;
+  position: relative;
+  left: 20px;
+  bottom: 905px;
+  height: 75px;
+  padding: 20 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+.signIn {
+  font-size: 20px;
+  position: relative;
+  left: 20px;
+  bottom: 711px;
+  height: 75px;
+  margin-right: 20px;
+  float: right;
+}
+
+.loginInfo {
+  margin-bottom: 8px
+}

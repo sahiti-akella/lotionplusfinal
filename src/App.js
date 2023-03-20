@@ -40,16 +40,18 @@ function App() {
         <div>
             {profile ? (
                 <div>
-                    <img src={profile.picture} alt="user image" />
-                    <h3>User Logged in</h3>
-                    <p>Name: {profile.name}</p>
-                    <p>Email Address: {profile.email}</p>
+                    <div loginInfo>
+                        <img style={{borderRadius: "50%"}}src={profile.picture} alt="user image" />
+                        <h3>User Logged in</h3>
+                        <p>Name: {profile.name}</p>
+                        <p>Email Address: {profile.email}</p>
+                        </div>
                     <br />
                     <br />
-                    <button onClick={logOut}>Sign out</button>
+                    <button className='signOut' onClick={logOut}>Sign out</button>
                 </div>
             ) : (
-                <button onClick={() => login()}>Sign in with Google </button>
+                <button className='signIn' onClick={() => login()}>Sign in with Google </button>
             )}
         </div>
     );
