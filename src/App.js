@@ -49,7 +49,7 @@ function App() {
                     <button className='signOut' onClick={logOut}>Sign out</button>
                 </div>
             ) : (
-                <button className='signIn' onClick={() => login()}>Sign in with Google </button>
+                <button className='signIn' onClick={() => login()}>Sign in with <img className='image' src='https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png' height={"30px"}></img> </button>
             )}
         </div>
     );
