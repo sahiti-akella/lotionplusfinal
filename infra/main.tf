@@ -15,7 +15,7 @@ provider "aws" {
 # the locals block is used to declare constants that 
 # you can use throughout your code
 locals {
-  function_name = "function-url-test"
+  function_name = "save-note"
   handler_name  = "main.lambda_handler"
   artifact_name = "artifact.zip"
 }
@@ -117,3 +117,29 @@ output "lambda_url" {
   value = aws_lambda_function_url.url.function_url
 }
 view raw
+
+# read the docs: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table
+resource "aws_dynamodb_table" "lotion-30140959" {
+  name         = "lotion-30140959"
+  billing_mode = "PROVISIONED"
+
+  # up to 8KB read per second (eventually consistent)
+  read_capacity = 1
+
+  # up to 1KB per second
+  write_capacity = 1
+
+
+  hash_key = "email"
+  range_key = "id"
+
+  attribute {
+    name = "email"
+    type = "S"
+  }
+  attribute {
+    name = "id"
+    type = "S"
+  }
+
+}
