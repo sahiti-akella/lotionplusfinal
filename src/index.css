@@ -51,6 +51,7 @@ header h1 a:hover {
 header {
   display: flex;
   border-bottom: 1px solid #eee;
+  
 }
 header aside {
   flex: 0 1 10%;
@@ -241,33 +242,51 @@ input.note-title {
 
 .signOut {
   font-size: 20px;
-  margin-right: 20px;
-  float: right;
+  bottom: 100px;
   position: relative;
   bottom: 100px;
   height: 75px;
-  left: 20px;
+  width: 100px;
+
+
 }
 
 .signIn {
+  margin-top: 700px;
   font-size: 20px;
-  position: relative;
-  bottom: 420px;
   height: 50px;
-  width: 300px;
-  margin-left: 40%;
+  width: 250px;
+  position: relative;
   border: 1px solid #cecece;
   border-radius: 5px;
+  z-index: 1;
 }
 
-.profileInfo {
-  display: flex;
-  margin-left: 78%;
-  margin-top: -683px;
-  margin-right: 20px;
 
+#login-button-div {
+  display: flex;
+  margin-left: 42%;
+  margin-top: -400px;
+  margin-right: 20px;
+  
 }
 
 .image {
-  margin-bottom: -6px;
+  height: 20px;
+
+}
+
+.email_ {
+  height: 50px;
+
+}
+
+.email {
+  margin-right: 35px;
+  float: left;
+  
+}
+
+#app-header {
+  position: relative;
 }
